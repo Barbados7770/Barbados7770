@@ -1,75 +1,159 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мой сайт</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Barbados7770</title>
 
-    <style>
-        body{
-            font-family: Arial, sans-serif;
-            background:#f5f5f5;
-            margin:0;
-        }
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
 
-        header{
-            background:#2b6cff;
-            color:white;
-            padding:30px;
-            text-align:center;
-        }
+body {
+    background: radial-gradient(circle at top, #0f172a, #020617);
+    color: #fff;
+}
 
-        main{
-            max-width:900px;
-            margin:40px auto;
-            background:white;
-            padding:30px;
-            border-radius:15px;
-            box-shadow:0 5px 15px rgba(0,0,0,.15);
-        }
+/* NAVBAR */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background: rgba(0,0,0,0.3);
+    backdrop-filter: blur(10px);
+}
 
-        h2{
-            color:#2b6cff;
-        }
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #38bdf8;
+}
 
-        footer{
-            text-align:center;
-            padding:20px;
-            color:#666;
-        }
-    </style>
+nav a {
+    margin: 0 15px;
+    color: #cbd5e1;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.hero h1 {
+    font-size: 50px;
+    background: linear-gradient(90deg, #38bdf8, #a78bfa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+    margin-top: 15px;
+    color: #94a3b8;
+    font-size: 18px;
+}
+
+/* BUTTON */
+.btn {
+    margin-top: 30px;
+    padding: 12px 25px;
+    background: linear-gradient(90deg, #38bdf8, #a78bfa);
+    border: none;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+/* CARDS */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 60px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: rgba(255,255,255,0.05);
+    padding: 25px;
+    border-radius: 15px;
+    width: 250px;
+    border: 1px solid rgba(255,255,255,0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: #38bdf8;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    color: #38bdf8;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    color: #64748b;
+    margin-top: 40px;
+}
+</style>
+
 </head>
 
 <body>
 
 <header>
-    <h1>Добро пожаловать!</h1>
-    <p>Это мой первый сайт 🎉</p>
+    <div class="logo">Barbados7770</div>
+    <nav>
+        <a href="#">Главная</a>
+        <a href="#">Торговля</a>
+        <a href="#">Рынки</a>
+        <a href="#">Поддержка</a>
+    </nav>
 </header>
 
-<main>
+<section class="hero">
+    <h1>Крипто платформа нового поколения</h1>
+    <p>Быстрая, безопасная и современная торговля цифровыми активами</p>
+    <button class="btn">Начать</button>
+</section>
 
-<h2>Обо мне</h2>
+<section class="cards">
+    <div class="card">
+        <h3>Безопасность</h3>
+        <p>Многоуровневая защита данных и транзакций.</p>
+    </div>
 
-<p>
-Здесь будет информация обо мне.
-Позже мы сделаем красивое меню, картинки и разные разделы.
-</p>
+    <div class="card">
+        <h3>Быстрота</h3>
+        <p>Мгновенное выполнение ордеров без задержек.</p>
+    </div>
 
-<h2>Мои заметки</h2>
-
-<ul>
-<li>Первая заметка</li>
-<li>Вторая заметка</li>
-<li>Третья заметка</li>
-</ul>
-
-</main>
+    <div class="card">
+        <h3>Интерфейс</h3>
+        <p>Удобный и современный дизайн для пользователей.</p>
+    </div>
+</section>
 
 <footer>
-
-Создано мной ❤️
-
+    © 2026 Barbados7770. Все права защищены.
 </footer>
 
 </body>
